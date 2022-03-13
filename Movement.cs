@@ -124,19 +124,3 @@ public abstract class Movement : MonoBehaviour
         _grounded = false;
     }
 }
-
-/*
- * old walljump , did not work
- * 
-        Collider[] colArray = Physics.OverlapSphere(FeetPos(), 0.45f, groundLayer);
-        if (colArray.Length > 0)
-        {
-            reflectvector = (transform.position - colArray[0].transform.position).normalized;
-            return true;
-        }
-        else
-        {
-            reflectvector = Vector3.zero;
-            return false;
-        }
-*/
